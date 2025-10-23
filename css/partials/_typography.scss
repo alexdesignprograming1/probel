@@ -1,0 +1,173 @@
+@mixin typeface-1($size, $device: desktop) {
+  font-family: 'Inter', sans-serif;
+
+  //h1
+  @if ($size == h1) and ($device == desktop) {
+    font-size: 3.5rem;
+    line-height: 120%;
+    font-weight: bold;
+    letter-spacing: 0;
+  }@else if ($size == h1) and ($device == mobile) {
+    font-size: 2.125rem;
+    line-height: 110%;
+    letter-spacing: 0;
+  }
+
+  //h2
+  @if ($size == h2) and ($device == desktop) {
+    font-size: 3rem;
+    line-height: 120%;
+  }@else if ($size == h2) and ($device == mobile) {
+    font-size: 2.125rem;
+    line-height: 120%;
+  }
+
+  //h3 
+  @else if $size == h3 and $device == desktop {
+    font-size: 2rem;
+    line-height: 120%;
+    letter-spacing: 0;
+  }@else if $size == h3 and $device == mobile {
+    font-size: 1.688rem;
+    line-height: 120%;
+    letter-spacing: 0;
+  }
+
+  //h4 
+  @else if $size == h4 and $device == desktop {
+    font-size: 24px;
+    line-height: 150%;
+  }@else if $size == h4 and $device == mobile {
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  //h5
+  @else if $size == h5 and $device == desktop {
+    font-size: 18px;
+    line-height: 150%;
+  }@else if $size == h5 and $device == mobile {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+@mixin typeface-2($size: p2, $device: desktop) {
+
+  //p1
+  @if $size == p1 and $device == desktop {
+    font-size: 24px;
+    line-height: 130%;
+  }@else if $size == p1 and $device == mobile {
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  //p2
+  @if $size == p2 and $device == desktop {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 150%;
+  }@else if $size == p2 and $device == mobile {
+    font-size: 1.125rem;
+    line-height: 150%;
+  }
+
+  //p3
+  @if $size == p3 and $device == desktop {
+    font-size: 14px;
+    line-height: 150%;
+  }@else if $size == p3 and $device == mobile {
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+h1 {
+  color: $white;
+
+  @include typeface-1(h1, desktop);
+
+  @include responsive(s) {
+    @include typeface-1(h1, mobile);
+  }
+}
+
+h2 {
+  color: $blue-ligth;
+
+  @include typeface-1(h2, desktop);
+  
+  @include responsive(s) {
+    @include typeface-1(h2, mobile)
+  }
+}
+
+h3 {
+  color: $blue-ligth;
+
+  @include typeface-1(h3, desktop);
+
+  @include responsive(s) {
+    @include typeface-1(h3, mobile);
+  };
+}
+
+h4 {
+  color: $blue;
+
+  @include typeface-1(h4, desktop);
+
+  @include responsive(s) {
+    @include typeface-1(h4, mobile)
+  }
+}
+
+h5 {
+  color: $white;
+
+  @include typeface-1(h5, desktop);
+
+  @include responsive(s) {
+    @include typeface-1(h5, mobile)
+  }
+}
+
+p {
+  color: $white;
+
+  @include typeface-2(p2, desktop);
+
+  @include responsive(s) {
+    @include typeface-2(p2, mobile)
+  }
+}
+
+a {
+  font-family: 'Inter', sans-serif;
+  color: $white;
+
+  @include typeface-2(p2, desktop);
+
+  @include responsive(s) {
+    @include typeface-2(p2, mobile)
+  }
+}
+
+strong {
+  color: $black-dark;
+  @include typeface-2(p2, desktop);
+
+  @include responsive(s) {
+    @include typeface-2(p2, mobile)
+  }
+}
+
+.bold {
+  font-weight: bold;
+
+}
+
+.text-align {
+  text-align: center;
+}

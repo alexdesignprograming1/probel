@@ -1,0 +1,102 @@
+footer#footer {
+  background: $blue-footer;
+  position: relative;
+
+  .container {
+    min-height: 327px;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+
+      .rede-social-footer {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 12px;
+      }
+
+      li {
+        p:nth-child(1) {
+          margin-bottom: 12px;
+        }
+
+        a {
+         color: $white-dark;
+          font-weight: 400;
+          font-size: 0.875rem !important;
+          text-align: start;
+          transition: color ease 0.2s;
+          &:hover {
+            color: #00DD7D !important
+          }
+        }  
+
+
+        p {
+          color: $white-dark;
+          font-weight: 400;
+          font-size: 0.875rem !important;
+          text-align: start;
+        }
+
+        p:nth-child(1) {
+          font-size: 0.875rem !important;
+          font-weight: 600;
+          color: $white;
+        }
+      }
+    }
+
+    .footer-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+
+      p {
+        
+        font-size: 0.625rem !important;
+        color: $white-dark;
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    background: $blue-ligth;
+    bottom: 0;
+    height: 6px;
+  }
+}
+
+@include responsive(s) {
+
+  footer#footer {
+    min-height: 430px;
+    .container {
+
+      padding: 24px 16px;
+  
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+      }
+
+      .footer-logo {
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+  }
+}
