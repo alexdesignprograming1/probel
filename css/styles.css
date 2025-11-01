@@ -1338,7 +1338,7 @@ main section#contato .container p.subtitle {
     max-width: 100%;
   }
   main section#stores .container .stores-grid .store-card .store-contacts {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
   }
   main section#stores .container .stores-grid .store-card .store-contacts .contact-btn {
