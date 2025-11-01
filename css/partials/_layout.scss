@@ -519,17 +519,23 @@ main {
       }
 
       .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #444;
+        position: relative;
+        flex-shrink: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 50%;
-        width: 200px !important;
-        height: 200px !important;
-        overflow: hidden;
-        position: relative;
+        width: 300px;
+        // text-align: center;
+        // font-size: 18px;
+        // background: #444;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // border-radius: 50%;
+        // width: 300px;
+        // height: 300px;
+        // overflow: hidden;
+        // position: relative;
         
         .category-label {
           position: absolute;
@@ -544,9 +550,11 @@ main {
 
       .swiper-slide img {
         display: block;
-        width: 100%;
-        height: 100%;
         object-fit: cover;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: #444;
       }
     
     }

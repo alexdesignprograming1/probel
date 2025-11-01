@@ -233,10 +233,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const swiper = new Swiper('.swiper', {
   slidesPerView: 3,
-  //centeredSlides: true,
   spaceBetween: 30,
   grabCursor: true,
-  loop: true,
+  rewind: true,
   breakpoints: {
     320: {
       slidesPerView: 1,
