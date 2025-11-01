@@ -230,3 +230,25 @@ class ProductCarousel {
 document.addEventListener('DOMContentLoaded', () => {
   new ProductCarousel();
 });
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 3,
+  //centeredSlides: true,
+  spaceBetween: 30,
+  grabCursor: true,
+  loop: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});

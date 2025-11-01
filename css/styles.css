@@ -390,6 +390,61 @@ main section#produtos .container .products-carousel .carousel-dots .dot:hover {
   background: rgba(74, 144, 226, 0.6);
   transform: scale(1.1);
 }
+main section#categorias {
+  padding: 134px 0px 64px 0;
+}
+main section#categorias .container {
+  flex-direction: column;
+  justify-content: space-between;
+}
+main section#categorias .container h2 {
+  max-width: 444px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+main section#categorias .container p.subtitle {
+  max-width: 634px;
+  text-align: center;
+  color: #161617;
+  margin-bottom: 48px;
+  font-size: 1.25rem;
+}
+main section#categorias .container p.subtitle span {
+  color: #005A98;
+  font-weight: bold;
+}
+main section#categorias .container .swiper {
+  width: 100%;
+  height: 100%;
+}
+main section#categorias .container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 200px !important;
+  height: 200px !important;
+  overflow: hidden;
+  position: relative;
+}
+main section#categorias .container .swiper-slide .category-label {
+  position: absolute;
+  color: #005A98;
+  font-weight: 700;
+  font-size: 1.5rem !important;
+  background: rgba(255, 255, 255, 0.4117647059);
+  width: 100%;
+}
+main section#categorias .container .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 main section#stores {
   padding: 134px 0;
   background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
@@ -1294,6 +1349,9 @@ main section#contato .container p.subtitle {
   main section#stores .container .stores-grid .store-card .store-contacts .contact-btn.maps {
     grid-column: 1;
   }
+  main section#categorias {
+    padding: 64px 0 64px 0;
+  }
   main section#three {
     padding: 64px 0;
   }
@@ -1328,14 +1386,15 @@ main section#contato .container p.subtitle {
   main section#pilares-de-confianca .container .items-container {
     margin-top: 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 32px;
   }
   main section#pilares-de-confianca .container .items-container .item {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
+    max-width: 100% !important;
   }
   main section#pilares-de-confianca .container .items-container .item img {
     margin: 0;

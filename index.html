@@ -39,6 +39,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 
   <link rel="stylesheet" href="css/styles.css">
+   <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 <body>
@@ -144,30 +146,6 @@
 
   <!-- Main Content -->
   <main>
-    <!-- <section id="one">
-      <div class="container">
-        <div class="wrapper">
-
-          <div class="one-div1">
-            <h3>Conheça a <span>Probel</span>.</h3>
-
-            <div class="--wrapper-p">
-
-              <p>Aqui na Probel, você encontra uma loja de fábrica, com uma equipe própria, preparada para garantir que cada detalhe da sua experiência seja impecável. Nossos vendedores são treinados para oferecer as melhores opções de colchões, sempre focados em suas necessidades de conforto e bem-estar.</p>
-            </div>
-          </div>
-          
-          <div class="one-div2">
-            <img src="./assets/images/arte2-desktop.png" alt="probel">
-          </div>
-
-          <div class="one-div2-mobile">
-            <img src="./assets/images/arte2-mobile.png" alt="probel">
-          </div>
-
-        </div>
-      </div>
-    </section> -->
 
     <section id="produtos">
       <div class="container">
@@ -285,6 +263,42 @@
             <button class="dot" data-slide="4"></button>
           </div> -->
         </div>
+      </div>
+    </section>
+
+    <section id="categorias">
+      <div class="container">
+        <h2>Categorias</h2>
+        <p class="subtitle">Colchões, Box Baú, Poltronas e Cabeceiras da <span style="color: #C3A86F;">Probel</p>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/Vegas.png" alt="">
+              <p class="category-label">Baú</p>
+            </div>
+             <div class="swiper-slide">
+              <img src="./assets/images/Extreme.png" alt="">
+              <p class="category-label">Box</p>
+            </div>
+             <div class="swiper-slide">
+              <img src="./assets/images/Malibu.png" alt="">
+              <p class="category-label">Cabeceiras</p>
+            </div>
+             <div class="swiper-slide">
+              <img src="./assets/images/Brisa.png" alt="">
+              <p class="category-label">Travesseiros</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/Vegas.png" alt="">
+              <p class="category-label">Protetores</p>
+            </div>
+          </div>
+          <!-- Add Arrows -->
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+        </div>
+
       </div>
     </section>
     
@@ -631,6 +645,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>
