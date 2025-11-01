@@ -56,6 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggleCheckbox = document.getElementById('menu-toggle');
   const closeBtn       = document.getElementById('btn-close');
 
+  const mobileLinks = document.querySelectorAll('#mobile-menu .mobile-menu-list a');
+
   toggleCheckbox.addEventListener('change', () => {
     document.body.classList.toggle('no-scroll', toggleCheckbox.checked);
   });
@@ -64,6 +66,14 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleCheckbox.checked = false;
     document.body.classList.remove('no-scroll');
   });
+
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      toggleCheckbox.checked = false;
+      document.body.classList.remove('no-scroll');
+    });
+  });
+
 });
 
 document.addEventListener('DOMContentLoaded', () => {
