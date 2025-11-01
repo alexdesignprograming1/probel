@@ -139,34 +139,34 @@ main section#one .container .wrapper .one-div2 {
   align-items: center;
   gap: 14px;
 }
-main section#two {
+main section#produtos {
   padding: 134px 0px 64px 0;
 }
-main section#two .container {
+main section#produtos .container {
   flex-direction: column;
   justify-content: space-between;
 }
-main section#two .container h2 {
+main section#produtos .container h2 {
   max-width: 444px;
   text-align: center;
   margin-bottom: 32px;
 }
-main section#two .container p.subtitle {
+main section#produtos .container p.subtitle {
   max-width: 634px;
   text-align: center;
   color: #161617;
   margin-bottom: 48px;
   font-size: 1.25rem;
 }
-main section#two .container p.subtitle span {
+main section#produtos .container p.subtitle span {
   color: #005A98;
   font-weight: bold;
 }
-main section#two .container .products-carousel {
+main section#produtos .container .products-carousel {
   width: 100%;
   position: relative;
 }
-main section#two .container .products-carousel .carousel-container {
+main section#produtos .container .products-carousel .carousel-container {
   position: relative;
   overflow: hidden;
   border-radius: 20px;
@@ -175,17 +175,17 @@ main section#two .container .products-carousel .carousel-container {
           backdrop-filter: blur(10px);
   padding: 20px;
 }
-main section#two .container .products-carousel .carousel-wrapper {
+main section#produtos .container .products-carousel .carousel-wrapper {
   overflow: hidden;
   border-radius: 16px;
   padding: 48px 0px;
 }
-main section#two .container .products-carousel .carousel-track {
+main section#produtos .container .products-carousel .carousel-track {
   display: flex;
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   gap: 24px;
 }
-main section#two .container .products-carousel .wrapper-card {
+main section#produtos .container .products-carousel .wrapper-card {
   flex: 0 0 384px;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0, 0, 0, 0.04);
   min-width: 334px;
@@ -199,18 +199,18 @@ main section#two .container .products-carousel .wrapper-card {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
-main section#two .container .products-carousel .wrapper-card:hover {
+main section#produtos .container .products-carousel .wrapper-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12), 0 8px 16px rgba(0, 0, 0, 0.08);
 }
-main section#two .container .products-carousel .wrapper-card .card-header {
+main section#produtos .container .products-carousel .wrapper-card .card-header {
   position: relative;
   min-height: 300px;
   max-height: 300px;
   overflow: hidden;
   border-radius: 20px 20px 0 0;
 }
-main section#two .container .products-carousel .wrapper-card .card-header::before {
+main section#produtos .container .products-carousel .wrapper-card .card-header::before {
   content: "";
   position: absolute;
   top: 0;
@@ -222,14 +222,14 @@ main section#two .container .products-carousel .wrapper-card .card-header::befor
   transition: opacity 0.3s ease;
   z-index: 1;
 }
-main section#two .container .products-carousel .wrapper-card .card-header img {
+main section#produtos .container .products-carousel .wrapper-card .card-header img {
   min-height: 300px;
   width: 100%;
   height: auto;
   transform: scale(1);
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-main section#two .container .products-carousel .wrapper-card .card-header .payment-badge {
+main section#produtos .container .products-carousel .wrapper-card .card-header .payment-badge {
   position: absolute;
   top: 16px;
   right: 16px;
@@ -245,17 +245,17 @@ main section#two .container .products-carousel .wrapper-card .card-header .payme
   z-index: 2;
   transition: all 0.3s ease;
 }
-main section#two .container .products-carousel .wrapper-card .card-header .payment-badge:hover {
+main section#produtos .container .products-carousel .wrapper-card .card-header .payment-badge:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 16px rgba(74, 144, 226, 0.4);
 }
-main section#two .container .products-carousel .wrapper-card .card-header:hover::before {
+main section#produtos .container .products-carousel .wrapper-card .card-header:hover::before {
   opacity: 1;
 }
-main section#two .container .products-carousel .wrapper-card .card-header:hover img {
+main section#produtos .container .products-carousel .wrapper-card .card-header:hover img {
   transform: scale(1.05);
 }
-main section#two .container .products-carousel .wrapper-card .card-title {
+main section#produtos .container .products-carousel .wrapper-card .card-title {
   font-size: 1.6rem;
   font-weight: 700;
   text-align: center;
@@ -266,13 +266,13 @@ main section#two .container .products-carousel .wrapper-card .card-title {
   margin-bottom: 24px;
   letter-spacing: -0.5px;
 }
-main section#two .container .products-carousel .wrapper-card .sizes-prices {
+main section#produtos .container .products-carousel .wrapper-card .sizes-prices {
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin-bottom: 24px;
 }
-main section#two .container .products-carousel .wrapper-card .sizes-prices .size-price-item {
+main section#produtos .container .products-carousel .wrapper-card .sizes-prices .size-price-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -287,7 +287,7 @@ main section#two .container .products-carousel .wrapper-card .sizes-prices .size
   position: relative;
   overflow: hidden;
 }
-main section#two .container .products-carousel .wrapper-card .sizes-prices .size-price-item::before {
+main section#produtos .container .products-carousel .wrapper-card .sizes-prices .size-price-item::before {
   content: "";
   position: absolute;
   top: 0;
@@ -297,27 +297,27 @@ main section#two .container .products-carousel .wrapper-card .sizes-prices .size
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
   transition: left 0.5s ease;
 }
-main section#two .container .products-carousel .wrapper-card .sizes-prices .size-price-item:hover {
+main section#produtos .container .products-carousel .wrapper-card .sizes-prices .size-price-item:hover {
   transform: translateX(4px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-color: rgba(74, 144, 226, 0.2);
 }
-main section#two .container .products-carousel .wrapper-card .sizes-prices .size-price-item:hover::before {
+main section#produtos .container .products-carousel .wrapper-card .sizes-prices .size-price-item:hover::before {
   left: 100%;
 }
-main section#two .container .products-carousel .wrapper-card .sizes-prices .size-price-item .size {
+main section#produtos .container .products-carousel .wrapper-card .sizes-prices .size-price-item .size {
   font-weight: 600;
   color: #161617;
   font-size: 0.95rem;
   letter-spacing: -0.2px;
 }
-main section#two .container .products-carousel .wrapper-card .sizes-prices .size-price-item .dimensions {
+main section#produtos .container .products-carousel .wrapper-card .sizes-prices .size-price-item .dimensions {
   color: #6b7280;
   font-size: 0.8rem;
   font-weight: 400;
   opacity: 0.8;
 }
-main section#two .container .products-carousel .wrapper-card .sizes-prices .size-price-item .price {
+main section#produtos .container .products-carousel .wrapper-card .sizes-prices .size-price-item .price {
   font-weight: 700;
   background: linear-gradient(135deg, #5591BA 0%, #4a90e2 100%);
   -webkit-background-clip: text;
@@ -326,13 +326,13 @@ main section#two .container .products-carousel .wrapper-card .sizes-prices .size
   font-size: 1.1rem;
   letter-spacing: -0.3px;
 }
-main section#two .container .products-carousel .wrapper-card .card-footer {
+main section#produtos .container .products-carousel .wrapper-card .card-footer {
   padding: 24px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-main section#two .container .products-carousel .carousel-btn {
+main section#produtos .container .products-carousel .carousel-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -350,30 +350,30 @@ main section#two .container .products-carousel .carousel-btn {
   box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
   z-index: 10;
 }
-main section#two .container .products-carousel .carousel-btn:hover {
+main section#produtos .container .products-carousel .carousel-btn:hover {
   transform: translateY(-50%) scale(1.1);
   box-shadow: 0 8px 20px rgba(74, 144, 226, 0.4);
 }
-main section#two .container .products-carousel .carousel-btn:active {
+main section#produtos .container .products-carousel .carousel-btn:active {
   transform: translateY(-50%) scale(0.95);
 }
-main section#two .container .products-carousel .carousel-btn.carousel-btn-prev {
+main section#produtos .container .products-carousel .carousel-btn.carousel-btn-prev {
   left: -24px;
 }
-main section#two .container .products-carousel .carousel-btn.carousel-btn-next {
+main section#produtos .container .products-carousel .carousel-btn.carousel-btn-next {
   right: -24px;
 }
-main section#two .container .products-carousel .carousel-btn svg {
+main section#produtos .container .products-carousel .carousel-btn svg {
   width: 20px;
   height: 20px;
 }
-main section#two .container .products-carousel .carousel-dots {
+main section#produtos .container .products-carousel .carousel-dots {
   display: flex;
   justify-content: center;
   gap: 12px;
   margin-top: 32px;
 }
-main section#two .container .products-carousel .carousel-dots .dot {
+main section#produtos .container .products-carousel .carousel-dots .dot {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -382,11 +382,11 @@ main section#two .container .products-carousel .carousel-dots .dot {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-main section#two .container .products-carousel .carousel-dots .dot.active {
+main section#produtos .container .products-carousel .carousel-dots .dot.active {
   background: linear-gradient(135deg, #005A98 0%, #4a90e2 100%);
   transform: scale(1.2);
 }
-main section#two .container .products-carousel .carousel-dots .dot:hover {
+main section#produtos .container .products-carousel .carousel-dots .dot:hover {
   background: rgba(74, 144, 226, 0.6);
   transform: scale(1.1);
 }
@@ -832,43 +832,43 @@ main section#three .container .wrapper .wrapper-items .items-container .item p {
 main section#three .container .wrapper .wrapper-items .items-container .item img {
   margin-top: 4px;
 }
-main section#four {
+main section#pilares-de-confianca {
   padding: 36px 0;
 }
-main section#four .container {
+main section#pilares-de-confianca .container {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
 }
-main section#four .container .img-mobile {
+main section#pilares-de-confianca .container .img-mobile {
   display: none;
 }
-main section#four .container .container-title {
+main section#pilares-de-confianca .container .container-title {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: start;
   text-align: start;
 }
-main section#four .container .container-title h3 {
+main section#pilares-de-confianca .container .container-title h3 {
   max-width: 592px;
 }
-main section#four .container .container-title h3 span {
+main section#pilares-de-confianca .container .container-title h3 span {
   color: #005A98;
 }
-main section#four .container .container-title p {
+main section#pilares-de-confianca .container .container-title p {
   max-width: 488px;
   color: #161617;
   font-size: 1.125rem;
 }
-main section#four .container .items-container {
+main section#pilares-de-confianca .container .items-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
   gap: 24px;
 }
-main section#four .container .items-container .item {
+main section#pilares-de-confianca .container .items-container .item {
   display: grid;
   justify-content: center;
   align-items: center;
@@ -878,12 +878,12 @@ main section#four .container .items-container .item {
   background: linear-gradient(135deg, #4285f4 0%, #1a73e8 100%);
   border-radius: 12px;
 }
-main section#four .container .items-container .item p {
+main section#pilares-de-confianca .container .items-container .item p {
   text-align: center;
   font-size: 1rem;
   color: #FFF9E9;
 }
-main section#four .container .items-container .item img {
+main section#pilares-de-confianca .container .items-container .item img {
   margin-top: 4px;
   width: 40px;
 }
@@ -1110,19 +1110,19 @@ main section#eight .container .img-eight .img-balon {
   top: 180px;
   left: -75px;
 }
-main section#nine {
+main section#contato {
   padding: 80px 0;
   background-image: url("../../assets/images/arte7-desktop.png");
   background-position: center center;
 }
-main section#nine .container {
+main section#contato .container {
   flex-direction: column;
   justify-content: space-between;
 }
-main section#nine .container h2 {
+main section#contato .container h2 {
   color: #F5F8FA;
 }
-main section#nine .container p.subtitle {
+main section#contato .container p.subtitle {
   margin-top: 32px;
   margin-bottom: 40px;
   font-size: 1.25rem;
@@ -1172,71 +1172,71 @@ main section#nine .container p.subtitle {
   main section#one .container .wrapper .one-div2 {
     display: none;
   }
-  main section#two {
+  main section#produtos {
     padding: 64px 0;
   }
-  main section#two .container .products-carousel .carousel-container {
+  main section#produtos .container .products-carousel .carousel-container {
     padding: 16px;
   }
-  main section#two .container .products-carousel .carousel-track {
+  main section#produtos .container .products-carousel .carousel-track {
     gap: 16px;
   }
-  main section#two .container .products-carousel .wrapper-card {
+  main section#produtos .container .products-carousel .wrapper-card {
     flex: 0 0 320px;
     min-width: 300px;
     border-radius: 16px;
   }
-  main section#two .container .products-carousel .wrapper-card .card-header {
+  main section#produtos .container .products-carousel .wrapper-card .card-header {
     border-radius: 16px 16px 0 0;
   }
-  main section#two .container .products-carousel .wrapper-card .card-header .payment-badge {
+  main section#produtos .container .products-carousel .wrapper-card .card-header .payment-badge {
     font-size: 10px;
     padding: 6px 12px;
     border-radius: 16px;
   }
-  main section#two .container .products-carousel .wrapper-card .card-title {
+  main section#produtos .container .products-carousel .wrapper-card .card-title {
     font-size: 1.3rem !important;
     margin-bottom: 20px;
   }
-  main section#two .container .products-carousel .wrapper-card .sizes-prices {
+  main section#produtos .container .products-carousel .wrapper-card .sizes-prices {
     gap: 6px;
     margin-bottom: 20px;
   }
-  main section#two .container .products-carousel .wrapper-card .sizes-prices .size-price-item {
+  main section#produtos .container .products-carousel .wrapper-card .sizes-prices .size-price-item {
     padding: 10px 14px;
     border-radius: 10px;
   }
-  main section#two .container .products-carousel .wrapper-card .sizes-prices .size-price-item .size {
+  main section#produtos .container .products-carousel .wrapper-card .sizes-prices .size-price-item .size {
     font-size: 0.9rem;
   }
-  main section#two .container .products-carousel .wrapper-card .sizes-prices .size-price-item .dimensions {
+  main section#produtos .container .products-carousel .wrapper-card .sizes-prices .size-price-item .dimensions {
     font-size: 0.75rem;
   }
-  main section#two .container .products-carousel .wrapper-card .sizes-prices .size-price-item .price {
+  main section#produtos .container .products-carousel .wrapper-card .sizes-prices .size-price-item .price {
     font-size: 1rem;
   }
-  main section#two .container .products-carousel .wrapper-card .card-footer {
+  main section#produtos .container .products-carousel .wrapper-card .card-footer {
     padding: 20px 16px;
   }
-  main section#two .container .products-carousel .carousel-btn {
+  main section#produtos .container .products-carousel .carousel-btn {
     width: 40px;
     height: 40px;
   }
-  main section#two .container .products-carousel .carousel-btn.carousel-btn-prev {
+  main section#produtos .container .products-carousel .carousel-btn.carousel-btn-prev {
     left: -20px;
   }
-  main section#two .container .products-carousel .carousel-btn.carousel-btn-next {
+  main section#produtos .container .products-carousel .carousel-btn.carousel-btn-next {
     right: -20px;
   }
-  main section#two .container .products-carousel .carousel-btn svg {
+  main section#produtos .container .products-carousel .carousel-btn svg {
     width: 16px;
     height: 16px;
   }
-  main section#two .container .products-carousel .carousel-dots {
+  main section#produtos .container .products-carousel .carousel-dots {
     margin-top: 24px;
     gap: 8px;
   }
-  main section#two .container .products-carousel .carousel-dots .dot {
+  main section#produtos .container .products-carousel .carousel-dots .dot {
     width: 10px;
     height: 10px;
   }
@@ -1307,37 +1307,37 @@ main section#nine .container p.subtitle {
   main section#three .container .wrapper .faq-accordion {
     display: flex !important;
   }
-  main section#four {
+  main section#pilares-de-confianca {
     padding: 0;
   }
-  main section#four .container .img-desktop {
+  main section#pilares-de-confianca .container .img-desktop {
     display: none;
   }
-  main section#four .container .img-mobile {
+  main section#pilares-de-confianca .container .img-mobile {
     display: block;
   }
-  main section#four .container .container-title {
+  main section#pilares-de-confianca .container .container-title {
     flex-direction: column;
   }
-  main section#four .container .container-title h3 {
+  main section#pilares-de-confianca .container .container-title h3 {
     margin-bottom: 24px;
   }
-  main section#four .container .container-title p {
+  main section#pilares-de-confianca .container .container-title p {
     text-align: start;
   }
-  main section#four .container .items-container {
+  main section#pilares-de-confianca .container .items-container {
     margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
   }
-  main section#four .container .items-container .item {
+  main section#pilares-de-confianca .container .items-container .item {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
   }
-  main section#four .container .items-container .item img {
+  main section#pilares-de-confianca .container .items-container .item img {
     margin: 0;
     width: 32px;
     height: 32px;
@@ -1451,13 +1451,13 @@ main section#nine .container p.subtitle {
     left: 15px;
     width: 240px;
   }
-  main section#nine .container h2 {
+  main section#contato .container h2 {
     font-size: 2rem;
   }
-  main section#nine .container p.subtitle {
+  main section#contato .container p.subtitle {
     font-size: 1.125rem;
   }
-  main section#nine .container .btn {
+  main section#contato .container .btn {
     min-width: 100%;
   }
   footer#footer {
