@@ -7,6 +7,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+:root {
+  --swiper-navigation-size: 25px !important;
+}
+
 @import "./partials/colors";
 @import "./partials/layout";
 @import "./partials/typography";

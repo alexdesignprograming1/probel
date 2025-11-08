@@ -5,9 +5,9 @@ window.addEventListener('scroll', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  const openBtn  = document.getElementById('open-demo');
+  const openBtn = document.getElementById('open-demo');
   const closeBtn = document.getElementById('close-demo');
-  const dialog   = document.getElementById('demo-dialog');
+  const dialog = document.getElementById('demo-dialog');
   const demoBtns = document.querySelectorAll('.open-demo');
 
   demoBtns.forEach(btn =>
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const toggleCheckbox = document.getElementById('menu-toggle');
-  const closeBtn       = document.getElementById('btn-close');
+  const closeBtn = document.getElementById('btn-close');
 
   closeBtn.addEventListener('click', () => {
     // desmarca o checkbox, fechando o menu
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const toggleCheckbox = document.getElementById('menu-toggle');
-  const closeBtn       = document.getElementById('btn-close');
+  const closeBtn = document.getElementById('btn-close');
 
   const mobileLinks = document.querySelectorAll('#mobile-menu .mobile-menu-list a');
 
@@ -77,20 +77,20 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const cards        = document.querySelector('.pricing-cards-info');
-  const table        = document.querySelector('.features-table');
-  const headerH      = document.querySelector('#header').offsetHeight;
-  const tableTop     = table.offsetTop;
-  const tableHeight  = table.offsetHeight;
-  const buffer       = 200; // px antes do fim da tabela para esconder
+  const cards = document.querySelector('.pricing-cards-info');
+  const table = document.querySelector('.features-table');
+  const headerH = document.querySelector('#header').offsetHeight;
+  const tableTop = table.offsetTop;
+  const tableHeight = table.offsetHeight;
+  const buffer = 200; // px antes do fim da tabela para esconder
   const minWidthShow = 960; // px — abaixo disso nunca exibe
 
   const tableEndThreshold = tableTop + tableHeight - buffer;
 
   function updateCardsVisibility() {
     const scrollPos = window.scrollY + headerH;
-    const isWide   = window.innerWidth >= minWidthShow;
-    const inRange  = scrollPos >= tableTop && scrollPos < tableEndThreshold;
+    const isWide = window.innerWidth >= minWidthShow;
+    const inRange = scrollPos >= tableTop && scrollPos < tableEndThreshold;
 
     if (isWide && inRange) {
       cards.classList.add('fixed');
@@ -239,6 +239,16 @@ class ProductCarousel {
 // Initialize carousel when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
   new ProductCarousel();
+});
+
+
+// HeroSwiper
+const swiperHero = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 
 const swiper = new Swiper('.swiper', {
